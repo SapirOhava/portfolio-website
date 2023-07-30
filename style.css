@@ -50,7 +50,8 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #b7d7e4;
+  background: #a68470;
+  /* background: #b7d7e4; */
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -74,15 +75,198 @@ nav ul li a:hover::after {
   font-size: 25px;
 }
 
-.aboutImage {
+.headerImage {
   width: 300px;
   border-radius: 50%;
 }
 
-.aboutTextDiv {
+.headerTextDiv {
   margin-top: 10%;
 }
-.aboutImageDiv {
+.headerImageDiv {
   margin-top: 5%;
   margin-right: 7%;
+}
+
+/* -----------About----------- */
+
+#about {
+  padding: 80px 0;
+  color: #7b7a71;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.aboutCol1 {
+  flex-basis: 35%;
+}
+
+.aboutCol1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.aboutCol2 {
+  flex-basis: 60%;
+}
+
+.subTitle {
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #d7f4e6;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #7b7a71;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* --------------------Services---------------- */
+
+#services {
+  padding: 30px 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: #a0afa8;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #a68470;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* when you hover it will move the box up by 10 px */
+.services-list div:hover {
+  background: #d7f4e6;
+  transform: translateY(-10px);
+}
+
+/* ----------------- Portfolio ------------- */
+#portfolio {
+  padding: 50px 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #f4e6d7);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14 px;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: beige;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
 }
