@@ -4,9 +4,10 @@
   font-family: 'Architects Daughter', cursive;
   box-sizing: border-box;
 }
-
+/* loved colors */
+/* rgb(249 250 234); */
 body {
-  background: #f4e6d7;
+  background: #f6f7f1;
   color: #7b7a71;
 }
 
@@ -31,6 +32,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* background: #cedfd0; */
 }
 
 nav ul li {
@@ -121,7 +123,6 @@ nav ul li a:hover::after {
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
 }
 
 .tab-links {
@@ -136,7 +137,7 @@ nav ul li a:hover::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #d7f4e6;
+  background: #c73d7b;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -152,8 +153,7 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: #7b7a71;
-  font-size: 14px;
+  color: #c73d7b;
 }
 
 .tab-contents {
@@ -162,6 +162,9 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
   display: block;
+}
+#volunteer-img {
+  width: 100px;
 }
 
 /* --------------------Services---------------- */
@@ -207,7 +210,7 @@ nav ul li a:hover::after {
 
 /* when you hover it will move the box up by 10 px */
 .services-list div:hover {
-  background: #d7f4e6;
+  background: #cedfd0;
   transform: translateY(-10px);
 }
 
@@ -233,11 +236,12 @@ nav ul li a:hover::after {
   width: 100%;
   border-radius: 10px;
   display: block;
+  transition: transform 0.5s;
 }
 
 .layer {
   width: 100%;
-  height: 100%;
+  height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), #f4e6d7);
   border-radius: 10px;
   position: absolute;
@@ -251,6 +255,7 @@ nav ul li a:hover::after {
   padding: 0 40px;
   text-align: center;
   font-size: 14 px;
+  transition: height 0.5s;
 }
 
 .layer h3 {
@@ -269,4 +274,28 @@ nav ul li a:hover::after {
   height: 60px;
   border-radius: 50%;
   text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #c73d7b;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #f4e6d7;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #c73d7b;
 }
