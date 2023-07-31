@@ -6,9 +6,11 @@
 }
 /* loved colors */
 /* rgb(249 250 234); */
+/* #F8FAEE */
+/* f6f7f1 */
 body {
-  background: #f6f7f1;
-  color: #7b7a71;
+  background: #f8faee;
+  color: #79616a;
 }
 
 #header {
@@ -42,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #7b7a71;
+  color: #ad4e72;
   text-decoration: none;
   font-size: 22px;
   position: relative;
@@ -67,7 +69,7 @@ nav ul li a:hover::after {
 .header-text {
   display: flex;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 22px;
 }
 .header-text h1 {
   font-size: 60px;
@@ -79,7 +81,7 @@ nav ul li a:hover::after {
 
 .headerImage {
   width: 300px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .headerTextDiv {
@@ -93,7 +95,7 @@ nav ul li a:hover::after {
 /* -----------About----------- */
 
 #about {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   color: #7b7a71;
 }
 
@@ -116,9 +118,10 @@ nav ul li a:hover::after {
 }
 
 .subTitle {
+  font-family: 'Waiting for the Sunrise', cursive;
   font-size: 60px;
-  font-weight: 600;
-  color: black;
+  font-weight: 400;
+  color: #ad4e72;
 }
 
 .tab-titles {
@@ -170,28 +173,23 @@ nav ul li a:hover::after {
 /* --------------------Services---------------- */
 
 #services {
-  padding: 30px 0;
+  padding: 70px 0;
 }
 
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .services-list div {
-  background: #a0afa8;
+  background: #d3e3d8;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
 }
 
 .services-list div h3 {
@@ -210,7 +208,7 @@ nav ul li a:hover::after {
 
 /* when you hover it will move the box up by 10 px */
 .services-list div:hover {
-  background: #cedfd0;
+  background: #a9c8c0;
   transform: translateY(-10px);
 }
 
@@ -286,13 +284,13 @@ nav ul li a:hover::after {
 
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 10px auto;
   width: fit-content;
   border: 1px solid #c73d7b;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #f4e6d7;
+  color: #c73d7b;
   transition: background 0.5s;
 }
 
@@ -310,22 +308,21 @@ nav ul li a:hover::after {
 }
 
 .contact-left p {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .contact-left p i {
   color: #c73d7b;
   margin-right: 15px;
-  font-size: 25px;
 }
 
 .social-icons {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .social-icons a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 15px;
   color: #c73d7b;
   display: inline-block;
@@ -339,7 +336,7 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
   display: inline-block;
-  background: #7b7a71;
+  background: #f8faee;
 }
 .contact-right form {
   width: 100%;
@@ -350,7 +347,7 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #a0afa8;
+  background: #d3e3d8;
   padding: 15px;
   margin: 15px 0;
   color: #ffffff;
@@ -368,8 +365,8 @@ form .btn2 {
 .copyright {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
-  background: #c73d7b;
+  padding: 15px 0;
+  background: rgb(189 138 161);
   font-weight: 300;
   margin-top: 20px;
 }
