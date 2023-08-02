@@ -8,9 +8,11 @@
 /* rgb(249 250 234); */
 /* #F8FAEE */
 /* f6f7f1 */
+/* #F8F6ED */
+/* #f4f8e2 */
 body {
-  background: #f8faee;
-  color: #79616a;
+  background: white;
+  color: #7b7a71;
 }
 
 #header {
@@ -22,7 +24,7 @@ body {
 }
 
 .logo {
-  width: 140px;
+  height: 100px;
 }
 
 .container {
@@ -34,7 +36,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* background: #cedfd0; */
+  background: #f4f8e2;
 }
 
 nav ul li {
@@ -44,26 +46,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ad4e72;
+  color: rgb(188 107 138);
   text-decoration: none;
   font-size: 22px;
   position: relative;
 }
 
-nav ul li a::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #a68470;
-  /* background: #b7d7e4; */
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
+nav ul li a:hover {
+  color: #df4f90;
 }
 
 .header-text {
@@ -71,21 +61,22 @@ nav ul li a:hover::after {
   justify-content: space-between;
   font-size: 22px;
 }
-.header-text h1 {
-  font-size: 60px;
+.header-text h3 {
+  font-size: 50px;
   margin-top: 20px;
 }
 .header-text p {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .headerImage {
   width: 300px;
-  /* border-radius: 50%; */
+  border-radius: 10px;
 }
 
 .headerTextDiv {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-left: 8%;
 }
 .headerImageDiv {
   margin-top: 5%;
@@ -95,8 +86,9 @@ nav ul li a:hover::after {
 /* -----------About----------- */
 
 #about {
-  /* padding: 80px 0; */
+  padding: 80px 0;
   color: #7b7a71;
+  background: #edf1eb;
 }
 
 .row {
@@ -121,7 +113,8 @@ nav ul li a:hover::after {
   font-family: 'Waiting for the Sunrise', cursive;
   font-size: 60px;
   font-weight: 400;
-  color: #ad4e72;
+  color: rgb(188 107 138);
+  /* color: #94a5ff; */
 }
 
 .tab-titles {
@@ -129,26 +122,15 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-  margin-right: 50px;
-  font-size: 18px;
+  margin-right: 40px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
 
-.tab-links::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #c73d7b;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-}
-
-.tab-links.active-link::after {
-  width: 100%;
+.tab-links.active-link {
+  color: #ad4e72;
 }
 
 .tab-contents ul li {
@@ -156,7 +138,8 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: #c73d7b;
+  color: rgb(188 107 138);
+  font-size: 20px;
 }
 
 .tab-contents {
@@ -167,7 +150,7 @@ nav ul li a:hover::after {
   display: block;
 }
 #volunteer-img {
-  width: 100px;
+  width: 100%;
 }
 
 /* --------------------Services---------------- */
@@ -184,7 +167,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div {
-  background: #d3e3d8;
+  background: #ece9f1;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -208,7 +191,7 @@ nav ul li a:hover::after {
 
 /* when you hover it will move the box up by 10 px */
 .services-list div:hover {
-  background: #a9c8c0;
+  background: #d8d4df;
   transform: translateY(-10px);
 }
 
@@ -291,11 +274,11 @@ nav ul li a:hover::after {
   border-radius: 6px;
   text-decoration: none;
   color: #c73d7b;
-  transition: background 0.5s;
 }
 
 .btn:hover {
-  background: #c73d7b;
+  border: 1px solid #94a5ff;
+  color: #94a5ff;
 }
 
 /* -------------contact--------------- */
@@ -312,7 +295,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #c73d7b;
+  color: rgb(188 107 138);
   margin-right: 15px;
 }
 
@@ -324,7 +307,7 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 20px;
   margin-right: 15px;
-  color: #c73d7b;
+  color: rgb(188 107 138);
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -336,7 +319,6 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
   display: inline-block;
-  background: #f8faee;
 }
 .contact-right form {
   width: 100%;
@@ -345,12 +327,10 @@ nav ul li a:hover::after {
 form input,
 form textarea {
   width: 100%;
-  border: 0;
+  border: 1px solid rgb(188 107 138);
   outline: none;
-  background: #d3e3d8;
   padding: 15px;
   margin: 15px 0;
-  color: #ffffff;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -360,6 +340,9 @@ form .btn2 {
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+}
+.submit-btn {
+  background: white;
 }
 
 .copyright {
