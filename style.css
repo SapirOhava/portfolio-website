@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Architects Daughter', cursive;
+  /* font-family: 'Architects Daughter', cursive; */
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
   box-sizing: border-box;
 }
+/* #94A5FF  the blue*/
 /* loved colors */
 /* rgb(249 250 234); */
 /* #F8FAEE */
@@ -12,7 +15,7 @@
 /* #f4f8e2 */
 body {
   background: white;
-  color: #7b7a71;
+  color: #31302e;
 }
 
 #header {
@@ -23,12 +26,19 @@ body {
   background-position: center; */
 }
 
+.header-title-color {
+  color: rgb(155 136 209);
+}
+
 .logo {
   height: 100px;
 }
 
 .container {
-  padding: 10px 10%;
+  padding: 10px 5%;
+}
+.bold-p-text {
+  font-size: 25px;
 }
 
 nav {
@@ -36,7 +46,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #f4f8e2;
+  background: #f3f6f1;
+  /* background: #f4f8e2; */
 }
 
 nav ul li {
@@ -46,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(188 107 138);
+  color: #467973;
   text-decoration: none;
   font-size: 22px;
   position: relative;
@@ -63,15 +74,13 @@ nav ul li a:hover {
 }
 .header-text h3 {
   font-size: 50px;
-  margin-top: 20px;
-}
-.header-text p {
-  font-size: 24px;
+  margin: 5% 0;
 }
 
 .headerImage {
+  margin-top: 10%;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 3%;
 }
 
 .headerTextDiv {
@@ -85,10 +94,14 @@ nav ul li a:hover {
 
 /* -----------About----------- */
 
+.about-title-color {
+  color: #3d62b9;
+}
+
 #about {
   padding: 80px 0;
-  color: #7b7a71;
-  background: #edf1eb;
+  color: #716f60;
+  background: #f5fbe8;
 }
 
 .row {
@@ -110,11 +123,10 @@ nav ul li a:hover {
 }
 
 .subTitle {
-  font-family: 'Waiting for the Sunrise', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 60px;
-  font-weight: 400;
-  color: rgb(188 107 138);
-  /* color: #94a5ff; */
+  font-weight: 300;
+  /* color: rgb(188 107 138); */
 }
 
 .tab-titles {
@@ -123,22 +135,22 @@ nav ul li a:hover {
 
 .tab-links {
   margin-right: 40px;
-  font-size: 20px;
-  font-weight: 500;
   cursor: pointer;
   position: relative;
+  color: #3d62b9;
+  font-size: 20px;
 }
 
 .tab-links.active-link {
-  color: #ad4e72;
+  color: #d2db45;
 }
 
 .tab-contents ul li {
   list-style: none;
   margin: 10px 0;
 }
-.tab-contents ul li span {
-  color: rgb(188 107 138);
+.tab-contents ul li h3 {
+  color: #3d62b9;
   font-size: 20px;
 }
 
