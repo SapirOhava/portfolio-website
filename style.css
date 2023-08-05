@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  height: 200px;
+  width: 150px;
 }
 .header-logo {
   display: flex;
@@ -249,7 +249,8 @@ nav ul li a:hover {
 /* -------------contact--------------- */
 
 .contact-title-color {
-  color: rgb(163 232 199);
+  /* color: rgb(163 232 199); */
+  color: rgb(142 224 203);
 }
 .contact-left {
   flex-basis: 35%;
