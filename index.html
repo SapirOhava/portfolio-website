@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Belleza&family=Caveat&family=Fira+Sans:wght@100&family=Fuzzy+Bubbles&family=Gochi+Hand&family=League+Spartan:wght@100&family=Open+Sans:wght@300;400&family=Poppins:wght@100;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Belleza&family=Caveat&family=Fira+Sans:wght@100&family=Fuzzy+Bubbles&family=Gochi+Hand&family=League+Spartan:wght@100&family=Nunito:wght@300&family=Open+Sans:wght@300;400&family=Poppins:wght@100;300&display=swap"
       rel="stylesheet"
     />
     <script
@@ -20,7 +20,6 @@
     <div id="header">
       <div>
         <nav>
-          <img src="images/logoGreen.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -29,6 +28,9 @@
           </ul>
         </nav>
         <div class="header-text">
+          <div class="header-logo">
+            <img src="images/logoPressedCut.png" class="logo" />
+          </div>
           <div class="headerTextDiv">
             <h3 class="subTitle header-title-color">Hello there!</h3>
             <p class="bold-p-text">
@@ -44,12 +46,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="container">
-      <img src="images/8.png" width="1000px" />
-    </div>
-    <div class="container">
-      <img src="images/9.png" width="1000px" />
-    </div> -->
     <!--------------------About---------------->
     <div id="about">
       <div class="container">
@@ -216,16 +212,18 @@
     <!--------------------Services---------------->
     <div id="services">
       <div class="container">
-        <h3 class="subTitle">My Personal Projects</h3>
+        <h3 class="subTitle services-title-color">My Personal Projects</h3>
         <div class="services-list">
           <div>
-            <h3>Video & Chat Social Media Website</h3>
+            <h3 class="services-title-color">
+              Video & Chat Social Media Website
+            </h3>
             <p>
               This is a social media website designed for finding and learning
               with study partners.
             </p>
             <br />
-            <strong>It includes:</strong>
+            <h4 class="underline">It includes:</h4>
             <ul>
               <li>group video chats,</li>
               <li>live online chat,</li>
@@ -233,23 +231,23 @@
               <li>custom search for study partners,</li>
               <li>creating and participating in learning groups, and more.</li>
             </ul>
-            <strong>Technologies and Deployment:</strong>
+            <h4 class="underline">Technologies and Deployment:</h4>
             <ul>
               <li>
-                <strong>Front-end:</strong>
+                <h4>Front-end:</h4>
                 The website was built using React, Redux, JavaScript, HTML, and
                 CSS
               </li>
               <li>
-                <strong>miscellaneous:</strong> the library Socket.IO enables
-                real-time video and chat meetings.
+                <h4>miscellaneous:</h4>
+                the library Socket.IO enables real-time video and chat meetings.
               </li>
               <li>
-                <strong>back-end:</strong>
+                <h4>back-end:</h4>
                 Node.js
               </li>
               <li>
-                <strong>persistence layer:</strong>
+                <h4>persistence layer:</h4>
                 MongoDB Atlas & Firebase
               </li>
             </ul>
@@ -262,27 +260,38 @@
           </div>
 
           <div>
-            <h3>RESTful API with Node.js</h3>
+            <h3 class="services-title-color">RESTful API with Node.js</h3>
             <p>
               This powerful API provides full CRUD functionality for managing
               users, products, and orders. Here are some key features:
-              <br /><br />
-              <strong>Authentication:</strong> I have ensured the security of my
-              API using JSON Web Tokens (JWT), allowing for secure user
-              authentication and authorization. <br /><br />
-              <strong>Persistence Layer:</strong> To maintain data consistency,
-              I have utilized MongoDB and Mongoose as the persistence layer,
-              ensuring efficient data storage and retrieval. The MongoDB Atlas
-              integration ensures data availability and scalability.
-              <br /><br />
-              <strong>Validation and Data Upload:</strong> I have implemented
-              Mongoose validation to maintain data integrity and consistency.
-              Additionally, users can conveniently upload images using the
-              Multer package, enhancing their experience with my API.
-              <br /><br />
-              <strong>User Management:</strong> My API supports user login and
-              signup functionalities, offering a seamless and secure experience
-              for users.
+            </p>
+            <br />
+            <h4>Authentication:</h4>
+            <p>
+              I have ensured the security of my API using JSON Web Tokens (JWT),
+              allowing for secure user authentication and authorization.
+            </p>
+            <br />
+            <h4>Persistence Layer:</h4>
+            <p>
+              To maintain data consistency, I have utilized MongoDB and Mongoose
+              as the persistence layer, ensuring efficient data storage and
+              retrieval. The MongoDB Atlas integration ensures data availability
+              and scalability.
+            </p>
+            <br />
+            <h4>Validation and Data Upload:</h4>
+            <p>
+              I have implemented Mongoose validation to maintain data integrity
+              and consistency. Additionally, users can conveniently upload
+              images using the Multer package, enhancing their experience with
+              my API.
+            </p>
+            <br />
+            <h4>User Management:</h4>
+            <p>
+              My API supports user login and signup functionalities, offering a
+              seamless and secure experience for users.
             </p>
             <a
               class="github-link"
@@ -292,33 +301,36 @@
             ></a>
           </div>
           <div>
-            <h3>Welcome to My Portfolio Website</h3>
+            <h3 class="services-title-color">
+              Welcome to My Portfolio Website
+            </h3>
             <p>
               Thank you for visiting my portfolio website! This site serves as a
               showcase of my skills, experiences, and projects for potential
               employers, clients, and collaborators.
             </p>
             <br />
-            <strong>Technologies and Deployment:</strong>
+            <h4 class="underline">Technologies and Deployment:</h4>
             <ul>
               <li>
-                <strong>Front-end:</strong> I've crafted this website using a
-                combination of JavaScript, CSS, and HTML to ensure an appealing
-                visual presentation and smooth user experience.
+                <h4>Front-end:</h4>
+                I've crafted this website using a combination of JavaScript,
+                CSS, and HTML to ensure an appealing visual presentation and
+                smooth user experience.
               </li>
               <li>
-                <strong>Logo Design:</strong> I created the logo and performed
-                photo editing using Canva, a widely used online graphic design
-                tool.
+                <h4>Logo Design:</h4>
+                I created the logo and performed photo editing using Canva, a
+                widely used online graphic design tool.
               </li>
               <li>
-                <strong>AWS Hosting:</strong> My portfolio website is hosted on
-                Amazon Web Services (AWS) infrastructure. I utilize AWS S3
-                (Simple Storage Service) to store and deliver static files like
-                HTML, CSS, and JavaScript, taking advantage of its scalable
-                storage capabilities. AWS Route 53 serves as my DNS provider,
-                managing the domain name and directing traffic to the website
-                hosted on AWS S3.
+                <h4>AWS Hosting:</h4>
+                My portfolio website is hosted on Amazon Web Services (AWS)
+                infrastructure. I utilize AWS S3 (Simple Storage Service) to
+                store and deliver static files like HTML, CSS, and JavaScript,
+                taking advantage of its scalable storage capabilities. AWS Route
+                53 serves as my DNS provider, managing the domain name and
+                directing traffic to the website hosted on AWS S3.
               </li>
             </ul>
             <a
@@ -336,7 +348,7 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h3 class="subTitle">Contact Me</h3>
+            <h3 class="subTitle contact-title-color">Contact Me</h3>
             <p><i class="fa-regular fa-envelope"></i>ohavasapir@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>054-6455480</p>
             <div class="social-icons">
@@ -353,6 +365,9 @@
             <a href="images/sapirOhavaCV.pdf" download class="btn btn2"
               >Download CV</a
             >
+            <div class="header-logo">
+              <img src="images/logoPressedCut.png" class="logo" />
+            </div>
           </div>
           <div class="contact-right">
             <form>
