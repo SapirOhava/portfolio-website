@@ -6,6 +6,9 @@
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* #94A5FF  the blue*/
 /* loved colors */
 /* rgb(249 250 234); */
