@@ -330,3 +330,9 @@ form .btn2 {
 .copyright i {
   color: #ffffff;
 }
+
+#msg {
+  color: #94a5ff;
+  margin-top: -10px;
+  display: block;
+}
