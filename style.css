@@ -68,10 +68,6 @@ body {
   height: 100vh;
 }
 
-#menu-icon {
-  display: none;
-}
-
 #personal img {
   max-width: 100%;
   height: auto; /* This ensures the aspect ratio is maintained */
@@ -82,8 +78,9 @@ body {
 }
 
 #menu-icon {
+  display: none;
   font-size: 25px;
-  margin: 10px;
+  margin: 5%;
 }
 
 .logo {
@@ -172,7 +169,7 @@ nav ul li a:hover {
   }
 
   .bold-p-text {
-    font-size: 17px;
+    font-size: 90%;
     margin: 3%;
   }
 
@@ -182,7 +179,8 @@ nav ul li a:hover {
 
   .headerImage {
     margin-top: 0;
-    width: 230px;
+    width: 50%;
+    object-fit: cover;
   }
 
   .headerImageDiv {
