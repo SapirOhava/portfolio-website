@@ -23,9 +23,53 @@ body {
 .underline {
   text-decoration: underline;
 }
+/* ----------------header-modal-------------------- */
+
+.modal {
+  color: rgb(155 136 209);
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.modal-content {
+  background-color: #f3f6f1;
+  padding: 20px;
+}
+
+.close {
+  color: rgb(155 136 209);
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+.modal-content ul {
+  list-style: none;
+}
+.modal-content ul a {
+  text-decoration: none;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* --------------------end of header modal---------------- */
 #header {
   width: 100%;
   height: 100vh;
+}
+
+#menu-icon {
+  display: none;
 }
 
 #personal img {
@@ -35,6 +79,11 @@ body {
 
 .header-title-color {
   color: rgb(155 136 209);
+}
+
+#menu-icon {
+  font-size: 25px;
+  margin: 10px;
 }
 
 .logo {
@@ -48,6 +97,7 @@ body {
 
 .container {
   padding: 10px 5%;
+  display: flex;
 }
 .bold-p-text {
   /* font-size: 25px; */
@@ -82,7 +132,6 @@ nav ul li a:hover {
 .header-text {
   display: flex;
   height: 100vh;
-  justify-content: space-between;
   font-size: 22px;
 }
 .header-text h3 {
@@ -105,6 +154,80 @@ nav ul li a:hover {
   margin-right: 7%;
 }
 
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .header-text {
+    flex-direction: column;
+  }
+
+  #first-logo-div {
+    display: none;
+  }
+
+  .header-text h3 {
+    font-size: 25px;
+    margin: 3% 3% 0 3%;
+  }
+
+  .bold-p-text {
+    font-size: 17px;
+    margin: 3%;
+  }
+
+  .headerTextDiv {
+    margin-top: 0;
+  }
+
+  .headerImage {
+    margin-top: 0;
+    width: 230px;
+  }
+
+  .headerImageDiv {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+/* -------------------select box------------------- */
+.select-wrapper {
+  position: relative;
+  margin: 5%;
+  display: none;
+}
+
+.styled-select {
+  color: #3d62b9;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none; /* Removes the default styling of select in some browsers */
+  -webkit-appearance: none; /* Removes the default styling of select in Safari */
+  -moz-appearance: none; /* Removes the default styling of select in Firefox */
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: '⌵';
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  color: #3d62b9;
+  pointer-events: none; /* Makes it so the pseudo-element doesn't interfere with the click on the select box */
+}
+
 /* -----------About----------- */
 
 .about-title-color {
@@ -112,7 +235,7 @@ nav ul li a:hover {
 }
 
 #about {
-  padding: 80px 0;
+  padding: 50px 0;
   color: #716f60;
   background: #f5fbe8;
 }
@@ -178,8 +301,42 @@ nav ul li a:hover {
   width: 100%;
 }
 
-/* --------------------Services---------------- */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 5px 0;
+    font-size: 15px;
+  }
 
+  .tab-links {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .subTitle {
+    font-size: 30px;
+  }
+
+  .tab-links {
+    font-size: 18px;
+  }
+
+  .tab-contents ul li h3 {
+    font-size: 17px;
+  }
+
+  .select-wrapper {
+    display: block;
+  }
+}
+
+/* --------------------Services---------------- */
+.columDiv {
+  display: flex;
+  flex-direction: column;
+}
 .services-title-color {
   color: #5bb9a7;
 }
@@ -188,7 +345,7 @@ nav ul li a:hover {
   font-size: 15px;
 }
 #services {
-  padding: 70px 0;
+  padding: 40px 0;
 }
 
 .services-list {
@@ -247,6 +404,17 @@ nav ul li a:hover {
 .btn:hover {
   border: 1px solid #94a5ff;
   color: #94a5ff;
+}
+@media screen and (max-width: 768px) {
+  #services {
+    padding: 0 0;
+  }
+  .services-list div {
+    padding: 20px;
+  }
+  .services-list {
+    grid-gap: 20px;
+  }
 }
 
 /* -------------contact--------------- */
@@ -335,4 +503,10 @@ form .btn2 {
   color: #94a5ff;
   margin-top: -10px;
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header-logo {
+    margin-bottom: 0;
+  }
 }

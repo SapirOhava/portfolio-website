@@ -18,31 +18,40 @@
   </head>
   <body>
     <div id="header">
-      <div>
-        <nav>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">My Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-        <div class="header-text">
-          <div class="header-logo">
-            <img src="images/sapir-ohava-logo.png" class="logo" />
-          </div>
-          <div class="headerTextDiv">
-            <h3 class="subTitle header-title-color">Hello there!</h3>
-            <p class="bold-p-text">
-              I'm Sapir Ohava, a passionate full-stack developer<br />
-              eager to learn, solve problems, and embark on exciting
-              journeys.<br />
-              Let's team up and create something amazing together!
-            </p>
-          </div>
-          <div class="headerImageDiv">
-            <img src="images/sapir1.jpeg" class="headerImage" />
-          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">My Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i id="menu-icon" class="fa-solid fa-bars header-title-color"></i>
+      </nav>
+      <div class="header-text">
+        <div id="first-logo-div" class="header-logo">
+          <img src="images/sapir-ohava-logo.png" class="logo" />
+        </div>
+        <div class="headerTextDiv">
+          <h3 class="subTitle header-title-color">Hello there!</h3>
+          <p class="bold-p-text">
+            I'm Sapir Ohava, a passionate full-stack developer. eager to learn,
+            solve problems, and embark on exciting journeys. Let's team up and
+            create something amazing together!
+          </p>
+        </div>
+        <div class="headerImageDiv">
+          <img src="images/sapir1.jpeg" class="headerImage" />
         </div>
       </div>
     </div>
@@ -50,11 +59,17 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="aboutCol1">
-            <img src="images/diploma.jpg" />
-          </div>
           <div class="aboutCol2">
             <h3 class="subTitle about-title-color">About Me</h3>
+            <div class="select-wrapper">
+              <select class="styled-select" id="aboutMeSelect">
+                <option value="skills">Skills</option>
+                <option value="experience">Experience</option>
+                <option value="MilitaryService">Military Service</option>
+                <option value="education">Education</option>
+                <option value="VolunteerWork">Volunteer Work</option>
+              </select>
+            </div>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="openTab('skills')">
                 Skills
@@ -206,12 +221,15 @@
               <img id="volunteer-img" src="images/haogen.png" />
             </div>
           </div>
+          <div class="aboutCol1">
+            <img src="images/diploma.jpg" />
+          </div>
         </div>
       </div>
     </div>
     <!--------------------Services---------------->
     <div id="services">
-      <div class="container">
+      <div class="container columDiv">
         <h3 class="subTitle services-title-color">My Personal Projects</h3>
         <div class="services-list">
           <div>
@@ -391,7 +409,37 @@
         </p>
       </div>
     </div>
+    <!-----------------start--header-modal------------------>
     <script>
+      var modal = document.getElementById('myModal');
+      var btn = document.getElementById('menu-icon');
+      var span = document.getElementsByClassName('close')[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = 'block';
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = 'none';
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
+    <!-----------------end--header-modal------------------>
+    <script>
+      document
+        .getElementById('aboutMeSelect')
+        .addEventListener('change', function () {
+          openTab(this.value);
+        });
+
       var tabLinks = document.getElementsByClassName('tab-links');
       var tabContents = document.getElementsByClassName('tab-contents');
 
