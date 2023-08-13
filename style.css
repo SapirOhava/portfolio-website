@@ -179,7 +179,7 @@ nav ul li a:hover {
 
   .headerImage {
     margin-top: 0;
-    width: 50%;
+    /* height: 50%; */
     object-fit: cover;
   }
 
