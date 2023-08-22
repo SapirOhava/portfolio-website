@@ -342,13 +342,37 @@
                 widely used online graphic design tool.
               </li>
               <li>
-                <h4>AWS Hosting:</h4>
-                My portfolio website is hosted on Amazon Web Services (AWS)
-                infrastructure. I utilize AWS S3 (Simple Storage Service) to
-                store and deliver static files like HTML, CSS, and JavaScript,
-                taking advantage of its scalable storage capabilities. AWS Route
-                53 serves as my DNS provider, managing the domain name and
-                directing traffic to the website hosted on AWS S3.
+                <h4>AWS Hosting and Security:</h4>
+                The backbone of this website's online presence is Amazon Web
+                Services (AWS). Here's how I've utilized AWS:
+                <ul id="awsUl">
+                  <li>
+                    <h4>S3 (Simple Storage Service):</h4>
+                    All the static files – HTML, CSS, and JavaScript – are
+                    stored and served using AWS S3. It's not just for its
+                    reliable storage, but also for its capability to scale
+                    seamlessly with demand.
+                  </li>
+                  <li>
+                    <h4>Route 53:</h4>
+                    I use this DNS service to manage my domain. It ensures
+                    visitors are directed to my content on AWS S3 when they
+                    enter the domain name.
+                  </li>
+                  <li>
+                    <h4>ACM (AWS Certificate Manager):</h4>
+                    To improve the security of my website, I've secured it with
+                    an SSL certificate provided by ACM. This ensures that all
+                    data between my server and my visitors is encrypted and
+                    secure.
+                  </li>
+                  <li>
+                    <h4>CloudFront:</h4>
+                    I integrated AWS CloudFront—a content delivery network
+                    service that distributes content globally and ensures faster
+                    web page delivery—to enhance performance and security.
+                  </li>
+                </ul>
               </li>
             </ul>
             <a
